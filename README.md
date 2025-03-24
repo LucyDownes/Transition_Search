@@ -19,9 +19,9 @@ Args:
  - `save` (bool, optional): whether the output array should be saved. Filename will be "Transition_Search_{frequency_range}GHz_{atom_type}\_from_{ground}.csv". Default is `True`.
  
 Returns:
- - `data_arr` (2darray): details of all transitions within the specified parameter ranges. In order [$n_1$, $l_1$, $j_1$, $n_2$, $l_2$, $j_2$, Transition frequency (GHz), DME ($a_0e$), Wavelength from chosen 'ground' state to Rydberg state $R_1$ (nm), DME of transition from 'ground' state to Rydberg state $R_1$ ($a_0e$)]
+ - `data_arr` (2darray): details of all transitions within the specified parameter ranges. In order [ $n_1$, $l_1$, $j_1$, $n_2$, $l_2$, $j_2$, Transition frequency (GHz), DME ($a_0e$), Wavelength from chosen 'ground' state to Rydberg state $R_1$ (nm), DME of transition from 'ground' state to Rydberg state $R_1$ ($a_0e$)]
  
-This function only considers dipole allowed transitions ($\Delta l = \pm1$) and the value of the dipole matrix element given is for $\pi$ transitions using the `getDipoleMatrixElement` function from ARC (from/to $m_F = 1/2$ as this exists for all $l$ states). This could be changed to be just the radial part of the matrix element (`getRadialMatrixElement`) which would neglect the angular/polarisation dependence and need to specify type of transition ($\pi$, sigma^+ or sigma^-).
+This function only considers dipole allowed transitions ($\Delta l = \pm1$) and the value of the dipole matrix element given is for $\pi$ transitions using the `getDipoleMatrixElement` function from ARC (from/to $m_F = 1/2$ as this exists for all $l$ states). This could be changed to be just the radial part of the matrix element (`getRadialMatrixElement`) which would neglect the angular/polarisation dependence and need to specify type of transition ($\pi$, $\sigma^+$ or $\sigma^-$).
 
 ## References
 
