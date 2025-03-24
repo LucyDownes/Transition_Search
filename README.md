@@ -12,8 +12,8 @@ Args:
  - `freq_range` (tuple of floats): Frequency range in which to search for possible Rydberg transitions (in GHz). For example (500, 700) will search for all transitions between 500 GHz and 700 GHz.
 
  - `atom_type` (str `'Cs'` or `'Rb'`, optional): The atomic species to consider. Default is Cs (caesium), Rb is rubidium 87.
- - `ground` (tuple of floats, optional): The state from which we excite to Rydberg in the form $(n,l,j)$ e.g. (7,0,0.5) corresponds to 7S_{1/2}. (Default is `'default'` which corresponds to 7S_{1/2} in Caesium, and 6S_{1/2} for Rubidium.).
- - `min_dme` (float, optional): the minimum value of the dipole matrix element (DME) to be stored (in units a_0e). Transitions with DME less than this will not appear in the output array. Default is 5 a_0e.
+ - `ground` (tuple of floats, optional): The state from which we excite to Rydberg in the form $(n,l,j)$ e.g. (7,0,0.5) corresponds to $7\rm{S}_{1/2}$. (Default is `'default'` which corresponds to 7S_{1/2} in Caesium, and 6S_{1/2} for Rubidium.).
+ - `min_dme` (float, optional): the minimum value of the dipole matrix element (DME) to be stored (in units a_0e). Transitions with DME less than this will not appear in the output array. Default is 5 $a_0 e$.
  - `nmax` (float, optional): the maximum value of principal quantum number $n$ that will be considered. Default is 80.
  - `ryd_laser_range` (tuple of floats, optional): wavelength range of the laser used to excite from the specified 'ground' state to the $R_1$ Rydberg state (in nm). Default is (700,1000) corresponding to the approximate range of a Titanium:Sapphire laser. 
  - `save` (bool, optional): whether the output array should be saved. Filename will be "Transition_Search_{frequency_range}GHz_{atom_type}\_from_{ground}.csv". Default is `True`.
